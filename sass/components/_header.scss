@@ -1,24 +1,41 @@
 .header {
+  position: relative;
   border-bottom: 1px solid var(--border-col);
 }
-
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: auto;
+}
+.header__menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  background-color: inherit;
+}
+.header__icon-menu {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: currentColor;
+}
 .navigation,
 .header__container {
   display: flex;
 }
 
-.header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
-
 .header__list {
-  display: flex;
+  display: none;
   gap: 50px;
 }
 .header__list-contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 30px;
 }
@@ -42,7 +59,7 @@
 }
 .header__mail,
 .header__tel {
-  display: flex;
+  // display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;

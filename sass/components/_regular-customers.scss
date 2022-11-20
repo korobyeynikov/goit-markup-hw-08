@@ -1,19 +1,20 @@
 .container__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .roster-customers {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .roster-customers__client {
   display: flex;
-  padding: 16px 32px;
-  width: 170px;
+  padding: 16px 52px;
+  max-width: 210px;
   height: 92px;
 
   color: var(--color-icon);
