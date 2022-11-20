@@ -1,0 +1,96 @@
+.basement {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: var(--bgn-footer);
+}
+.basement__section {
+  display: flex;
+  align-items: baseline;
+}
+.basement__logo {
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+.basement__contacts {
+  margin-right: 70px;
+  width: 231px;
+}
+.basement__social {
+  margin-right: 93px;
+}
+.basement__leader {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contacts__address,
+.contacts__mail,
+.contacts__tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  transition: color var(--transition);
+}
+.contacts__address {
+  color: var(--secondary-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.contacts__mail,
+.contacts__tel {
+  color: var(--contacts-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.basement__form {
+  width: 570px;
+}
+.mailing {
+  display: flex;
+  align-items: center;
+}
+.mailing__input {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  margin: 0;
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: inherit;
+  color: var(--contacts-color);
+}
+.mailing__button {
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+}
+.mailing__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}

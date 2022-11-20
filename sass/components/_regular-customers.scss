@@ -1,0 +1,33 @@
+.container__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.roster-customers {
+  display: flex;
+  gap: 30px;
+}
+.roster-customers__client {
+  display: flex;
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  color: var(--color-icon);
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+
+  transition: color var(--transition), border-color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.roster-customers__icon {
+  fill: currentColor;
+}

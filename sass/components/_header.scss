@@ -1,0 +1,80 @@
+.header {
+  border-bottom: 1px solid var(--border-col);
+}
+
+.navigation,
+.header__container {
+  display: flex;
+}
+
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.header__list {
+  display: flex;
+  gap: 50px;
+}
+.header__list-contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+.header__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--brand-color);
+
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.header__mail,
+.header__tel {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  color: var(--main-color);
+
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.link__envelope,
+.link__smartphone {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.current {
+  position: relative;
+
+  color: var(--accent-color);
+  &::after {
+    content: '';
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    background-color: var(--accent-color);
+  }
+}

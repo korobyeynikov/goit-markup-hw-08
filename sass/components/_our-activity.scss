@@ -1,0 +1,40 @@
+.box {
+  padding-top: 0;
+}
+.box__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--brand-color);
+}
+.box__list {
+  display: flex;
+
+  gap: 30px;
+}
+.box__item {
+  position: relative;
+}
+.box__wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: var(--bgn-box);
+}
+.box__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+}

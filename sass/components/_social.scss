@@ -1,0 +1,29 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-networks__card {
+  display: flex;
+  padding: 12px 12px;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  transition: background-color var(--transition), color var(--transition);
+  color: var(--color-icon);
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.social-networks__icon {
+  fill: currentColor;
+}
+.social-networks__card--bgn {
+  color: var(--secondary-color);
+  background-color: var(--social-color);
+}
