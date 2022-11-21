@@ -540,4 +540,213 @@ body {
 .mailing__icon {
   fill: currentColor;
   margin-left: 10px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: var(--backdrop-overlay);
+  transition: opacity var(--transition), visibility var(--transition);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  width: 450px;
+  min-height: 609px;
+  padding: 40px;
+  background-color: var(--modal-bgn);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+  color: var(--logo-color);
+  transition: color var(--transition);
+}
+.modal__btn:hover, .modal__btn:focus {
+  color: var(--accent-color);
+}
+
+.modal__icon {
+  fill: currentColor;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
+
+.form__list {
+  margin-bottom: 20px;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--label-color);
+}
+
+.form__wrapper {
+  position: relative;
+}
+
+.form__input {
+  margin: 0;
+  padding: 0;
+  padding-left: 42px;
+  padding-right: 12px;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  outline: transparent;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  border: var(--bgn-border);
+  border-radius: 4px;
+}
+.form__input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.form__input:focus + .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form__textarea {
+  margin: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  outline: transparent;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  border: var(--bgn-border);
+  border-radius: 4px;
+}
+.form__textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.form__textarea::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--plh-color);
+}
+.form__textarea:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--plh-color);
+}
+.form__textarea::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--plh-color);
+}
+
+.form__checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--label-color);
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -appearance: none;
+  position: absolute;
+}
+
+.checkbox__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -22px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/Vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image var(--transition);
+}
+.checkbox__input:checked + .checkbox__icon {
+  background-image: url(../images/icon-check.svg);
+}
+
+.checkbox__link {
+  color: var(--accent-color);
+}
+
+.form__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+  width: 200px;
+  height: 50px;
+  border: transparent;
 }/*# sourceMappingURL=main.css.map */
