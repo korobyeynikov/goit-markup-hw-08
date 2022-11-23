@@ -6,6 +6,16 @@
   padding-top: 16px;
   padding-bottom: 16px;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 92px;
+  }
 }
 .header__menu {
   position: absolute;
@@ -15,6 +25,9 @@
   height: 40px;
   border: transparent;
   background-color: inherit;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .header__icon-menu {
   position: absolute;
@@ -33,11 +46,17 @@
 .header__list {
   display: none;
   gap: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .header__list-contacts {
   display: none;
   margin-left: auto;
   gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 .header__item {
   font-weight: 500;
@@ -60,9 +79,10 @@
 .header__mail,
 .header__tel {
   // display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+
   color: var(--main-color);
 
   transition: color var(--transition);

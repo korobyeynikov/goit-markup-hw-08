@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  opacity: 1;
   background-color: var(--secondary-color);
 }
 .mob-menu__close {
@@ -28,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
+
   padding: 48px 40px;
 }
 .mob-menu__list {
@@ -77,6 +78,10 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-.mob-menu__soc:not(:last-child) {
+.mob-menu__notilia:not(:first-child)::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  margin-right: 10px;
   border: var(--bgn-border);
 }
