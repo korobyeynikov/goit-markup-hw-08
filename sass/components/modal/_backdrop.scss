@@ -24,7 +24,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
-  .backdrop.is-hidden & {
+  .is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
   }
   @media screen and (min-width: 1200px) {

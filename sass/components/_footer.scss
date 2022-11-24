@@ -4,11 +4,37 @@
   text-align: center;
 
   background: var(--bgn-footer);
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
-// .basement__section {
-//   display: flex;
-//   align-items: baseline;
-// }
+.basement__section {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+    gap: 93px;
+  }
+}
+
+.basement__package {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+  }
+}
 .basement__logo {
   margin-bottom: 20px;
   color: var(--secondary-color);
@@ -18,10 +44,20 @@
   // width: 231px;
   margin-bottom: 60px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    text-align: start;
+  }
 }
 .basement__social {
   // margin-right: 93px;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .basement__leader {
   margin-bottom: 20px;
@@ -64,18 +100,19 @@
 }
 .basement__form {
   max-width: 450px;
+  @media screen and (min-width: 1200px) {
+    max-width: 570px;
+  }
 }
-// .mailing {
-//   // display: flex;
-//   // align-items: center;
-// }
+.mailing {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 .mailing__input {
-  // display: flex;
-  // align-items: center;
   width: 100%;
   height: 50px;
   margin: 0;
-  // margin-right: 12px;
   margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
@@ -87,6 +124,13 @@
 
   background-color: inherit;
   color: var(--contacts-color);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    width: 358px;
+    margin-right: 12px;
+    text-align: start;
+  }
 }
 .mailing__button {
   padding: 10px 28px 10px 31px;
@@ -95,6 +139,9 @@
   justify-content: center;
   width: 200px;
   height: 50px;
+  @media screen and (min-width: 1200px) {
+    padding-left: 28px;
+  }
 }
 .mailing__icon {
   fill: currentColor;

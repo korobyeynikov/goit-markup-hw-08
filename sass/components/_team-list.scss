@@ -41,6 +41,9 @@
 .team__wrapper {
   padding-top: 30px;
   padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .team__subtitle {
   margin-bottom: 10px;

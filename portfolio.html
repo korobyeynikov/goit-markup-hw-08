@@ -33,30 +33,104 @@
               <a class="link header__link" href="./index.html">Студія</a>
             </li>
             <li class="header__item">
-              <a class="link current header__link" href="">Портфоліо</a>
+              <a class="link current header__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="header__item">
               <a class="link header__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
-
         <ul class="list header__list-contacts">
           <li class="header__item">
             <a class="link header__mail" href="mailto:info@devstudio.com">
-              <svg class="link__envelope" width="16px" height="12px">
+              <svg class="link__envelope">
                 <use href="./images/icon.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="header__item">
             <a class="link header__tel" href="tel:+380961111111">
-              <svg class="link__smartphone" width="10px" height="16px">
+              <svg class="link__smartphone">
                 <use href="./images/icon.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button class="header__menu" type="button" data-menu-open>
+          <svg class="header__icon-menu">
+            <use href="./images/icon.svg#icon-menu_mob"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="mob-menu__close" type="button" data-menu-close>
+          <svg class="mob-menu__icon">
+            <use href="./images/icon.svg#icon-close_mob"></use>
+          </svg>
+        </button>
+        <div class="mob-menu__container">
+          <ul class="list mob-menu__list">
+            <li class="mob-menu__item">
+              <a class="link mob-menu__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="link mob-menu__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="link mob-menu__link" href="">Контакти</a>
+            </li>
+          </ul>
+          <div>
+            <ul class="list mob-menu__list-contacts">
+              <li class="mob-menu__item">
+                <a class="link mob-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="link mob-menu__mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list mob-menu__soc-list">
+              <li class="mob-menu__notilia">
+                <a
+                  class="link mob-menu__soc"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-menu__notilia">
+                <a
+                  class="link mob-menu__soc"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-menu__notilia">
+                <a
+                  class="link mob-menu__soc"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-menu__notilia">
+                <a
+                  class="link mob-menu__soc"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- маін -->
@@ -87,7 +161,7 @@
               <a class="link projects__focus" href="">
                 <div class="thumb">
                   <img
-                    src="./images/imgport.jpg"
+                    src="./images/imgport-desktop-1x.jpg"
                     alt="відкритий ноутбук"
                     width="370"
                     height="294"
@@ -110,7 +184,7 @@
               <a class="link projects__focus" href="">
                 <div class="thumb">
                   <img
-                    src="./images/imgport1.jpg"
+                    src="./images/imgport1-desktop-1x.jpg"
                     alt="два баскетболіста"
                     width="370"
                     height="294"
@@ -135,7 +209,7 @@
               <a class="link projects__focus" href="">
                 <div class="thumb">
                   <img
-                    src="./images/imgport2.jpg"
+                    src="./images/imgport2-desktop-1x.jpg"
                     alt="логотип ресторану"
                     width="370"
                     height="294"
@@ -157,7 +231,12 @@
             <li>
               <a class="link projects__focus" href="">
                 <div class="thumb">
-                  <img src="./images/imgport3.jpg" alt="навушники" width="370" height="294" />
+                  <img
+                    src="./images/imgport3-desktop-1x.jpg"
+                    alt="навушники"
+                    width="370"
+                    height="294"
+                  />
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -175,7 +254,12 @@
             <li>
               <a class="link projects__focus" href="">
                 <div class="thumb">
-                  <img src="./images/imgport4.jpg" alt="дві коробки" width="370" height="294" />
+                  <img
+                    src="./images/imgport4-desktop-1x.jpg"
+                    alt="дві коробки"
+                    width="370"
+                    height="294"
+                  />
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -193,7 +277,12 @@
             <li>
               <a class="link projects__focus" href="">
                 <div class="thumb">
-                  <img src="./images/imgport5.jpg" alt="монітор" width="370" height="294" />
+                  <img
+                    src="./images/imgport5-desktop-1x.jpg"
+                    alt="монітор"
+                    width="370"
+                    height="294"
+                  />
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -211,7 +300,12 @@
             <li>
               <a class="link projects__focus" href="">
                 <div class="thumb">
-                  <img src="./images/imgport6.jpg" alt="відкрита книжка" width="370" height="294" />
+                  <img
+                    src="./images/imgport6-desktop-1x.jpg"
+                    alt="відкрита книжка"
+                    width="370"
+                    height="294"
+                  />
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -229,7 +323,12 @@
             <li>
               <a class="link projects__focus" href="">
                 <div class="thumb">
-                  <img src="./images/imgport7.jpg" alt="ярлик" width="370" height="294" />
+                  <img
+                    src="./images/imgport7-desktop-1x.jpg"
+                    alt="ярлик"
+                    width="370"
+                    height="294"
+                  />
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -248,7 +347,7 @@
               <a class="link projects__focus" href="">
                 <div class="thumb">
                   <img
-                    src="./images/imgport8.jpg"
+                    src="./images/imgport8-desktop-1x.jpg"
                     alt="людина працює на ноутбуці"
                     width="370"
                     height="294"
@@ -274,65 +373,67 @@
     <!-- footer -->
     <footer class="basement">
       <div class="container basement__section">
-        <div>
-          <a class="link logo basement__logo" lang="en" href="./index.html"
-            ><span class="logo__board" lang="en">Web</span>Studio
-          </a>
-          <address class="contacts basement__contacts">
-            <ul class="list">
-              <li class="contacts__item">
-                <a
-                  class="link contacts__address"
-                  href="http://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
+        <div class="basement__package">
+          <div>
+            <a class="link logo basement__logo" lang="en" href="./index.html"
+              ><span class="logo__board" lang="en">Web</span>Studio
+            </a>
+            <address class="contacts basement__contacts">
+              <ul class="list">
+                <li class="contacts__item">
+                  <a
+                    class="link contacts__address"
+                    href="http://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="link contacts__mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="link contacts__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="basement__social">
+            <p class="basement__leader">приєднуйтесь</p>
+            <ul class="social-networks list">
+              <li>
+                <a class="social-networks__card social-networks__card--bgn" href="">
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contacts__item">
-                <a class="link contacts__mail" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a class="social-networks__card social-networks__card--bgn" href="">
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a class="link contacts__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li>
+                <a class="social-networks__card social-networks__card--bgn" href="">
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-networks__card social-networks__card--bgn" href="">
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icon.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="basement__social">
-          <p class="basement__leader">приєднуйтесь</p>
-          <ul class="social-networks list">
-            <li>
-              <a class="social-networks__card social-networks__card--bgn" href="">
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icon.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-networks__card social-networks__card--bgn" href="">
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icon.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-networks__card social-networks__card--bgn" href="">
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-networks__card social-networks__card--bgn" href="">
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icon.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="basement__form">
           <p class="basement__leader">підпишіться на розсилку</p>
