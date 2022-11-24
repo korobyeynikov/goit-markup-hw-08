@@ -238,7 +238,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__list-contacts {
-    display: block;
+    display: flex;
+    padding-top: 21px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list-contacts {
+    padding: 0;
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -262,9 +272,10 @@ body {
 
 .header__mail,
 .header__tel {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
-  font-size: 12px;
-  line-height: 1.17;
   color: var(--main-color);
   transition: color var(--transition);
 }
@@ -273,11 +284,41 @@ body {
 .header__tel:focus {
   color: var(--accent-color);
 }
+@media screen and (max-width: 1200px) {
+  .header__mail,
+.header__tel {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 
-.link__envelope,
-.link__smartphone {
-  margin-right: 10px;
+.link__envelope {
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .link__envelope {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.link__smartphone {
+  margin-right: 8px;
+  width: 10px;
+  height: 14px;
+  fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .link__smartphone {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .current {
@@ -401,10 +442,20 @@ body {
   padding-bottom: 118px;
   text-align: center;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../../images/Header-img-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-img-tablet-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../../images/Header-img-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -413,6 +464,11 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-img-desctop-1x.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../../images/Header-img-desctop-2x.jpg);
   }
 }
 
@@ -519,6 +575,11 @@ body {
   display: none;
   padding-top: 0;
 }
+@media screen and (min-width: 1200px) {
+  .box {
+    display: flex;
+  }
+}
 
 .box__title {
   margin-bottom: 50px;
@@ -566,14 +627,25 @@ body {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.19;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color);
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 
-.team__list {
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .team__card {
@@ -583,6 +655,11 @@ body {
 }
 .team__card:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__card:not(:last-child) {
+    margin: 0;
+  }
 }
 
 .team__wrapper {
@@ -765,6 +842,12 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal__btn {
   display: flex;
@@ -798,6 +881,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .form__list {
@@ -903,6 +991,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--label-color);
+}
+@media screen and (min-width: 1200px) {
+  .form__checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__input {

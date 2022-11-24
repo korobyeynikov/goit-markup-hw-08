@@ -53,9 +53,18 @@
 .header__list-contacts {
   display: none;
   margin-left: auto;
+
   gap: 30px;
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
+    padding-top: 21px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    flex-direction: row;
+    gap: 30px;
   }
 }
 .header__item {
@@ -78,10 +87,10 @@
 }
 .header__mail,
 .header__tel {
-  // display: flex;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
-  font-size: 12px;
-  line-height: 1.17;
 
   color: var(--main-color);
 
@@ -90,13 +99,34 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (max-width: 1200px) {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
-.link__envelope,
-.link__smartphone {
-  margin-right: 10px;
-
+.link__envelope {
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+.link__smartphone {
+  margin-right: 8px;
+  width: 10px;
+  height: 14px;
+  fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .current {

@@ -7,20 +7,30 @@
 
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.19;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--brand-color);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .team__list {
-  // display: flex;
-
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .team__card {
   &:not(:last-child) {
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
   }
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);

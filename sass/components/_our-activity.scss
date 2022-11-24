@@ -1,6 +1,9 @@
 .box {
   display: none;
   padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .box__title {
   margin-bottom: 50px;

@@ -93,6 +93,10 @@
   letter-spacing: 0.03em;
 
   color: var(--label-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__input {
   -webkit-appearance: none;
