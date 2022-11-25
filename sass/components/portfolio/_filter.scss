@@ -1,9 +1,26 @@
-.radio {
-  margin-bottom: 50px;
-
+.radio-box {
   display: flex;
-  justify-content: center;
+  width: 326px;
+  height: 91px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.radio {
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+  align-content: space-between;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .radio__button {
@@ -20,7 +37,7 @@
 
   transition: background-color var(--transition), color var(--transition),
     box-shadow var(--transition);
-
+  border: 0;
   border-color: transparent;
   background-color: var(--bgn-section);
   color: var(--brand-color);
