@@ -203,10 +203,10 @@ body {
 
 .header__menu {
   position: absolute;
-  top: 10px;
-  right: 15px;
   width: 40px;
   height: 40px;
+  top: 10px;
+  right: 15px;
   border: transparent;
   background-color: inherit;
 }
@@ -249,14 +249,13 @@ body {
 @media screen and (min-width: 768px) {
   .header__list-contacts {
     display: flex;
-    padding-top: 21px;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__list-contacts {
-    padding: 0;
     flex-direction: row;
     gap: 30px;
   }
@@ -331,21 +330,6 @@ body {
   }
 }
 
-.current {
-  position: relative;
-  color: var(--accent-color);
-}
-.current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  position: absolute;
-  bottom: -1px;
-  background-color: var(--accent-color);
-}
-
 .mob-menu {
   width: 100vw;
   height: 100vh;
@@ -357,12 +341,13 @@ body {
 }
 
 .mob-menu__close {
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 40px;
   height: 40px;
-  position: absolute;
   top: 10px;
   right: 15px;
   border-color: transparent;
@@ -437,6 +422,23 @@ body {
   height: 1px;
   margin-right: 10px;
   border: var(--bgn-border);
+}
+
+.current {
+  position: relative;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    background-color: var(--accent-color);
+  }
 }
 
 .hero {
