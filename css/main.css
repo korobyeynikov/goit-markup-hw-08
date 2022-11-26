@@ -177,6 +177,10 @@ body {
   border-bottom: 1px solid var(--border-col);
 }
 
+.header__container {
+  position: relative;
+}
+
 .header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -989,11 +993,12 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .projects {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
@@ -1035,6 +1040,17 @@ body {
 .thumb {
   position: relative;
   overflow: hidden;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .thumb {
+    width: 370px;
+  }
 }
 
 .overlay {
