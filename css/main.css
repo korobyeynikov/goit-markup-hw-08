@@ -910,6 +910,7 @@ body {
     display: flex;
     align-items: center;
     width: 358px;
+    margin-bottom: 0;
     margin-right: 12px;
     text-align: start;
   }
