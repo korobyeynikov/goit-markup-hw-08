@@ -51,11 +51,14 @@
 }
 .mob-menu__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.18;
 
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 .mob-menu__mail {
   font-weight: 500;
@@ -71,11 +74,14 @@
 }
 .mob-menu__soc {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
 
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 .mob-menu__notilia:not(:first-child)::before {
   content: '';

@@ -62,10 +62,15 @@ body {
 }
 
 .container {
-  max-width: 480px;
+  max-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -389,10 +394,15 @@ body {
 
 .mob-menu__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__tel {
+    font-size: 34px;
+  }
 }
 
 .mob-menu__mail {
@@ -410,10 +420,15 @@ body {
 
 .mob-menu__soc {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__soc {
+    font-size: 18px;
+  }
 }
 
 .mob-menu__notilia:not(:first-child)::before {
@@ -1043,7 +1058,12 @@ body {
 .thumb {
   position: relative;
   overflow: hidden;
-  width: 450px;
+  width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .thumb {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .thumb {
